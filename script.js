@@ -18,6 +18,32 @@ function nouvelle(){
     button.textContent="Ajouté d'auteur";
     button.setAttribute("id","auteur");
     p.innerText= citation;
-
+    p.name= citation;
+    button.setAttribute('onclick','butaut()');
     pcitation.append(p, button); 
+}
+function butaut(){
+    const inputtext=document.createElement("input");
+    inputtext.type='text';
+    inputtext.name='inputauteur';
+    inputtext.style.width=`${30}%`;
+    inputtext.style.height=`${30}px`;
+    inputtext.placeholder="Le nom de l'auteur";
+    pcitation.append(inputtext);
+
+    const inputenvoyer=document.createElement("button");
+    inputenvoyer.type="button";
+    inputenvoyer.name="buttonenvo";
+    inputenvoyer.textContent="Ajouter";
+    inputenvoyer.setAttribute('onclick','ajou()');
+    pcitation.append(inputenvoyer);
+}
+function ajou(){
+    const  inputenvoyer=document.getElementsByName('buttonenvo');
+    const  citation=document.getElementsByName('citation');
+if(inputenvoyer.value !==""){
+    console.log(inputenvoyer.value)
+    // citation.innerText="Le nom de  l'auteur est"+;
+    
+}
 }
