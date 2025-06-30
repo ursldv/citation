@@ -1,0 +1,37 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form>button{
+    font-size: 1.2rem;
+    padding: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(162, 0, 255);
+    color: rgb(250, 249, 250);
+}
+#pcitation{
+    display: flex;
+    justify-content: center;
+}
+#auteur{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(180, 152, 233);
+    border-radius: 10px;
+    border: none;
+}
+#pcitation>p{
+    padding: 10px;
+    font-family: sans-serif;
+}
